@@ -1,0 +1,1 @@
+.nav-container{display:flex;flex-direction:row;justify-content:space-between;padding:20px 40px;font-family:Lato}.site-nav{flex-grow:1;background-color:pink}.logo-nav{flex:3;background-color:lightblue;text-align:center}.contact-nav{flex:1;background-color:lightgreen}
