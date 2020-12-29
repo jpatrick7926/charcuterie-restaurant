@@ -4,7 +4,10 @@ html
     title
       | Charcuterie
     link(rel='stylesheet' href='.././styles/stylesheet.min.css')
+    //FONTS
     link(href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet")
   body
     div.wrapper
       div.container
@@ -13,19 +16,28 @@ html
           nav.navbar
             div.nav-container
               div.site-nav
-                | First
+                | Site Nav
                 
               div.logo-nav
-                | Second 
+                | Logo 
                 
               div.contact-nav
-                | Third
+                | Contact Buttons
         // END HEADER NAV
-        // FULL WIDTH IMAGE
+        // FULL WIDTH HERO IMAGE
         div.main-content-wrapper
           div.hero-image-container
-            img.hero-image(src='https://www.helpguide.org/wp-content/uploads/fast-foods-candy-cookies-pastries-768.jpg')
+            //-This is just a placeholder for now
+            img.hero-image(src='https://i0.wp.com/www.astigvegan.com/wp-content/uploads/2013/08/adobo-tempeh-fancy-plating-1.jpg', width='100%')
             
+        // END HERO IMAGE
+        // ABOUT SECTION
+        div.about-wrapper
+          div.about-content-container
+            | When in need for a comforting night in, be sure to pick up a homecooked meal from Charcuterie. Chef Charlotte Castillo invites you to experience true, authentic filipino cuisine, cooked straight from her home kitchen. Using only the freshest ingredients provided by Mountain House soil, Charcuterie is a must try if you are in the area.
+          
+        
+        
             
 
 
