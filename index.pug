@@ -3,6 +3,7 @@ html
   head
     title
       | Charcuterie
+    script(type="text/javascript" src=".././script.js")
     link(rel='stylesheet' href='.././styles/stylesheet.min.css')
     //FONTS
     link(href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css')
@@ -14,21 +15,27 @@ html
         // HEADER NAV START
         header.main-header
           nav.navbar
+            div.hidden-logo
+              h1 CHARCUTERIE
+              a.icon(href="javascript:void(0);" onClick="myFunction()")
+                | &#9776;
             div.nav-container
-              div.site-nav
-                | Sito Nav
-                
+              div.buttons
+                -const siteLinks = ["WELCOME", "MENU", "REVIEWS"]
+                for link, i in siteLinks
+                  a.navButton(href="#")= link
               div.logo-nav
-                | Logo
-                
-              div.contact-nav
-                | Contact Buttons
+                h1 CHARCUTERIE
+              div.buttons
+                -const contactLinks = ["RESERVATIONS", "ORDER NOW"]
+                for link, i in contactLinks
+                  a.navButton(href="#")= link
         // END HEADER NAV
         // FULL WIDTH HERO IMAGE
         div.main-content-wrapper
           div.hero-image-container
             //-This is just a placeholder for now
-            img.hero-image(src='https://i0.wp.com/www.astigvegan.com/wp-content/uploads/2013/08/adobo-tempeh-fancy-plating-1.jpg', width='100%')
+            img.hero-image(src='../fork-spoon-food.jpg', width='100%')
             
         // END HERO IMAGE
         // ABOUT SECTION
