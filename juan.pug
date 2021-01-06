@@ -1,0 +1,130 @@
+doctype html
+html
+  head
+    title
+      | Charcuterie
+    script(type="text/javascript" src=".././script.js")
+    link(rel='stylesheet' href='.././styles/juan.min.css')
+    //FONTS
+    link(href='http://fonts.googleapis.com/css?family=Lato&subset=latin,latin-ext' rel='stylesheet' type='text/css')
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,600&family=Poppins:wght@300&display=swap" rel="stylesheet")
+  body
+    div.wrapper
+      div.container
+        // HEADER NAV START
+        header.main-header
+          nav.navbar
+            div.hidden-logo
+              h1 CHARCUTERIE
+              a.icon(href="javascript:void(0);" onClick="myFunction()")
+                | &#9776;
+            div.nav-container
+              div.buttons
+                -const siteLinks = ["WELCOME", "MENU", "REVIEWS"]
+                for link, i in siteLinks
+                  a.navButton(href="#")= link
+              div.logo-nav
+                h1 CHARCUTERIE
+              div.buttons
+                -const contactLinks = ["RESERVATIONS", "ORDER NOW"]
+                for link, i in contactLinks
+                  a.navButton(href="#")= link
+        // END HEADER NAV
+        // FULL WIDTH HERO IMAGE
+        div.main-content-wrapper
+          div.hero-image-container
+            //-This is just a placeholder for now
+            img.hero-image(src='../fork-spoon-food.jpg', width='100%')
+            
+        // END HERO IMAGE
+        // ABOUT SECTION
+        div.about-wrapper
+          div.about-content-container
+            | When in need for a comforting night in, be sure to pick up a homecooked meal from Charcuterie. Chef Charlotte Castillo invites you to experience true, authentic filipino cuisine, cooked straight from her home kitchen. Using only the freshest ingredients provided by Mountain House soil, Charcuterie is a must try if you are in the area.
+        // FEATURED ITEMS SECTION
+        div.featured-wrapper
+          div.featured-content-container
+            div.side-tag
+              i Featured Items 
+            
+            div.column-container
+              //- Left Column
+              div.featured-column
+                div.featured-node
+                  | Ube Pandisal
+                  span.featured-description
+                    | Traditional pandisal rolls with a hint of ube. 
+                    br
+                    | 1.5 per roll
+                div.featured-node
+                  | Pork Siopao
+                  span.featured-description
+                    | Pork bun steamed to order. 2
+                  br
+                div.featured-node
+                  | Beef Machado
+                  span.featured-description
+                    | Beef shortribs stewed potatoes, carrots, and peas. 8
+                div.featured-node
+                  | Cantaloupe Drink
+                  span.featured-description
+                    | Sweet cantaloupe drink. 2.5
+                    
+              //- Right Colmn
+              div.featured-column
+                div.featured-node
+                  | Buko Pancakes
+                  span.featured-description
+                    | Waffles baked to perfection infused with buko (young coconut) flavoring. 5
+                div.featured-node
+                  | Bistek
+                  span.featured-description
+                    | Marinated beef sautéed with onions, served over rice. 7
+                div.featured-node
+                  | Chicken / Pork Adobo
+                  span.featured-description
+                    | Meat marinated in soy, garlic, black peppercorns, and vinegar served over rice. 7
+                div.featured-node
+                  | Ube Crinkles
+                  span.featured-description
+                    | Heavily flavored ube cookies coated with powdered sugar. 5
+            div.menu-cta
+              a(href='https://www.google.com' style='text-decoration: none;')
+                i -- Full Menu --  
+        //GALLERY
+        div.gallery
+          figure.gallery_item.gallery_item--1
+            img.gallery__img(src="https://images.unsplash.com/photo-1568461002123-01f1229aa2bf?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1386&q=80", alt="Beef Mechado")
+            div.item-name
+              p Beef Mechado
+          figure.gallery_item.gallery_item--2
+            img.gallery__img(src="https://images.unsplash.com/photo-1599191179068-a4bb11ecd500?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1534&q=80", alt="Ube Pandesal")
+            div.item-name
+              p Ube Pandesal
+          figure.gallery_item.gallery_item--3
+            img.gallery__img(src="https://images.unsplash.com/photo-1563104307-944928bb174a?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80", alt="Pork Siopao")
+            div.item-name
+              p Pork Siopao  
+          figure.gallery_item.gallery_item--4
+            img.gallery__img(src="https://www.seriouseats.com/2020/09/20200901-filipino-cantaloupe-juice-vicky-wasik-5.jpg", alt="Cantaloupe Drink")
+            div.item-name
+              p Cantaloupe Drink
+          figure.gallery_item.gallery_item--5
+            img.gallery__img(src="https://images.unsplash.com/photo-1599340244135-9d58bd0d8fb5?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1400&q=80", alt="Buko Pancakes")
+            div.item-name
+              p Buko Pancakes
+          figure.gallery_item.gallery_item--6
+            img.gallery__img(src="https://thenotsocreativecook.com/wp-content/uploads/2019/10/Bistek-Tagalog-2.jpg", alt="Bistek")
+            div.item-name
+              p Bistek    
+          figure.gallery_item.gallery_item--7
+            img.gallery__img(src="https://prods3.imgix.net/images/articles/2017_04/Non-Feature-Filipino-Food-Trend-Chicken-Adobo-Recipe.jpg", alt="Adobo")
+            div.item-name
+              p Adobo
+          figure.gallery_item.gallery_item--8
+            img.gallery__img(src="https://i.redd.it/erqobybxdnz11.jpg", alt="Ube Crinkles")
+            div.item-name
+              p Ube Crinkles
