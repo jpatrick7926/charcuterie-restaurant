@@ -43,12 +43,6 @@
   padding: 0px
 
 
-// ABOUT SECTION
-@media screen and (max-width:1125px)
-  .about-content-container
-    width: 70%
-    padding: 40px 80px 40px 40px
-
   ////// RESPONSIVE NAVBAR START //////
   .logo-nav, .navButton
     display: none
@@ -91,12 +85,13 @@
     width: 100%
     padding: 20px
 
-
+// ABOUT SECTION
 @media screen and (max-width:1125px)
   .about-content-container
-    width: 40%
-    padding: 150px 200px 150px 50px
-    font-size: 26px
+    width: 85%
+    margin: 150px 0px
+    max-height: 2000px
+    font-size: 70px
 
 .about-wrapper
   font-family: 'Poppins', sans-serif
@@ -120,19 +115,17 @@
   padding-bottom: 100px
 
 .featured-content-container
-  display: flex
   width: 1000px
-  display: block
   // border: 1px solid grey
 
-.featured-content-container .side-tag
+.side-tag
   text-decoration: underline
   padding-top: 120px
   padding-bottom: 80px
   font-size: 28px
   font-weight: 600
 
-.featured-content-container .column-container
+.column-container
   display: flex
 
 .featured-column
@@ -162,6 +155,31 @@
   font-size: 16px
   display: block
   margin-top: 20px
+
+////// MOBILE FEATURED SECTION \\\\\\
+@media screen and (max-width:1125px)
+
+  .column-container
+    display: block
+
+  .featured-content-container
+    width: 100%
+    align-items: center
+
+  .side-tag
+    text-align: center
+    padding: 50px
+    font-size: 50px
+
+  .featured-node
+    font-size: 40px
+
+  .featured-description
+    font-size: 26px
+
+
+
+
 ////// GALLERY START //////
 .gallery
   display: grid
